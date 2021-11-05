@@ -51,6 +51,8 @@ RUN echo "deb [trusted=yes] http://packages.osrfoundation.org/gazebo/ubuntu-stab
   && apt-get -qq update && apt-get -q -y install \
   ignition-blueprint \
   ros-melodic-ros-ign \
+  ros-melodic-pcl-ros ros-melodic-pcl-conversions \
+  ros-melodic-ros-ign-bridge ros-melodic-ros-ign-gazebo ros-melodic-ros-ign-point-cloud libignition-launch3-dev libignition-launch3 \
   && rm -rf /var/lib/apt/lists/* \
   && apt-get -qq clean
 
